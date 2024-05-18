@@ -17,7 +17,7 @@ margin: 50;
 }
 .wrapper .item{
   
-  background-color: rgb(255, 255, 255);
+  background-color:#3b6071;
   border: 1px solid black;
   
 }
@@ -27,6 +27,7 @@ margin: 50;
   border-bottom-left-radius: 2rem;
   display: grid;
   grid-template-rows: .9fr 1fr .5fr .5fr .5fr;
+  color: white;
 }
 .wrapper .item1 .userprofile{
   justify-content: center;
@@ -69,4 +70,34 @@ margin: 50;
 .wrapper .item4{
   display: grid;
   grid-template-rows: 1fr 1fr .5fr ;
+} 
+.logo{
+  background-color: #ffffff;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 2rem;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin: 1.5rem;
+  color: black;
 }
+.skill{
+align-items: center;
+display: flex;
+height: 4rem;
+}
+.skillitem{
+ justify-content: center;
+ align-items: center;
+ display: flex;
+ width:fit-content;
+ padding: .2rem;
+ border-radius: 0.3rem ;
+margin-left: 1.5rem;
+ background-color: #acb1b6;
+ color: black;
+ font-size: small;
+ margin-top: .5rem;
+}
+
