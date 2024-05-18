@@ -28,11 +28,43 @@ margin: 50;
   display: grid;
   grid-template-rows: .9fr 1fr .5fr .5fr .5fr;
 }
+.wrapper .item1 .userprofile{
+  justify-content: center;
+  border-top-left-radius: .5rem;
+
+  align-items: center;
+  display: flex;
+  background-color: rgba(51,59,76,255);
+ 
+}
+.wrapper .item1 .userprofile img{
+
+  border-radius: 90rem;
+}
+.circleouter{
+  border: 4px solid #439298;
+  border-radius: 90rem;
+  width: 150px ;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.circleinner{
+  border: 4px solid #3b6071;
+  border-radius: 90rem;
+  width: 142px ;
+  height: 142px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
 .wrapper .item2{
-  background-color:aquamarine;
+  background-color:#449299;
 }
 .wrapper .item3{
-  background-color: rgb(133, 221, 192);
+  background-color: #a3cbcc;
 }
 .wrapper .item4{
   display: grid;
