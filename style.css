@@ -1,0 +1,34 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+margin: 50;
+}
+.wrapper{ 
+ max-width: 900px;
+ height: 990px;
+ margin: auto;
+ background-color: antiquewhite;
+ display: grid;
+ grid-template-columns: 1fr .03fr .03fr 2fr ;
+ padding: .5rem;
+}
+.wrapper .item{
+  
+  background-color: rgb(255, 255, 255);
+  border: 1px solid black;
+  
+}
+.wrapper .item1{
+  background-color: rgb(181, 181, 181);
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+}
+.wrapper .item2{
+  background-color:aquamarine;
+}
+.wrapper .item3{
+  background-color: rgb(133, 221, 192);
+}
