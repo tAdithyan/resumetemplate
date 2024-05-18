@@ -10,23 +10,23 @@ margin: 50;
  max-width: 900px;
  min-height: 990px;
  margin: auto;
- background-color: antiquewhite;
+ background-color: whitesmoke;
  display: grid;
- grid-template-columns: 1fr .03fr .03fr 2fr ;
+ grid-template-columns: .5fr .02fr .02fr 2fr ;
  padding: .5rem;
 }
 .wrapper .item{
   
-  background-color:#3b6071;
+  background-color: rgba(51,59,76,255);
   border: 1px solid black;
   
 }
 .wrapper .item1{
-  background-color: rgb(181, 181, 181);
+  background-color: rgba(51,59,76,255);
   border-top-left-radius: 2rem;
   border-bottom-left-radius: 2rem;
   display: grid;
-  grid-template-rows: .9fr 1fr .5fr .5fr .5fr;
+  grid-template-rows: 1.4fr 2fr 1.5fr 1fr 1fr;
   color: white;
 }
 .wrapper .item1 .userprofile{
@@ -73,8 +73,8 @@ margin: 50;
 } 
 .logo{
   background-color: #ffffff;
-  height: 3rem;
-  width: 3rem;
+  height: 2rem;
+  width: 2rem;
   border-radius: 2rem;
   justify-content: center;
   align-items: center;
@@ -86,6 +86,8 @@ margin: 50;
 align-items: center;
 display: flex;
 height: 4rem;
+margin: 0.5rem;
+
 }
 .skillitem{
  justify-content: center;
@@ -99,5 +101,11 @@ margin-left: 1.5rem;
  color: black;
  font-size: small;
  margin-top: .5rem;
+}
+.edudetails{
+  margin-left: 2rem;
+}
+.edudetails .para{
+  font-weight:bold;
 }
 
