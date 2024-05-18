@@ -80,7 +80,7 @@ body {
 
 .wrapper .item4 {
   display: grid;
-  grid-template-rows: .3fr 1fr .5fr;
+  grid-template-rows: .3fr 2.5fr .5fr;
   padding: 2rem;
   
 
@@ -202,7 +202,7 @@ body {
 }
 .arrow2{
   background-color: #d7d9dd;
-  height:300px;
+  height:100px;
   width: 2px;
   margin-left: 1rem;
   margin-top: .4rem;
@@ -221,9 +221,57 @@ body {
   margin-top: .4rem;
   position: absolute;
 }
-.experience{
+.experience_name{
   position: absolute;
   margin-left: 2rem;
   
 
+}
+.eperience_disc{
+  width: 500px;
+ 
+
+}
+.Achivements{
+  font-style: italic;
+  color: #82b2b7;
+  margin-left: 2rem;
+  font-size:13px;
+}
+.time_place{
+  margin-top: 4rem;
+  display: flex;
+  margin-left: 2rem;
+  gap: 22rem;
+  font-size:13px;
+  font-style: italic;
+  color: #82b2b7;
+}
+
+.smallcircle{
+  height: 8px;
+  width: 8px;
+  border-radius: 5px;
+  background-color: #439298;
+  margin-left: 1.5rem;
+  margin-top: .5rem;
+  position: absolute;
+}
+.disc{
+  margin-left: 2.8rem;
+}
+.Courses{
+  display: flex;
+  
+}
+.course {
+justify-content: center;
+display: flex;
+flex-direction: column;
+font-size: small;
+margin-left: 3rem;
+margin-top: .4rem;
+}
+.course p{
+  font-style: italic;
 }
