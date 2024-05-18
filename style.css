@@ -102,7 +102,6 @@ body {
   align-items: center;
   display: flex;
   height: 4rem;
-  margin: 0.5rem;
 
 }
 
@@ -181,4 +180,50 @@ body {
   
   display: grid;
   grid-template-rows: 1fr 1fr;
+}
+  .edu{
+  background-color: #323a4d;
+  color: whitesmoke;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 2rem;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+ margin-right: .5rem;
+
+}
+.arrow{
+  background-color: #d7d9dd;
+  height:20px;
+  width: 2px;
+  margin-left: 1rem;
+  
+}
+.arrow2{
+  background-color: #d7d9dd;
+  height:300px;
+  width: 2px;
+  margin-left: 1rem;
+  margin-top: .4rem;
+}
+.Workexp{
+  display: flex;
+  margin-top: 2rem;
+
+}
+.circle{
+  height: 10px;
+  width: 10px;
+  border-radius: 5px;
+  background-color: #439298;
+  margin-left: .8rem;
+  margin-top: .4rem;
+  position: absolute;
+}
+.experience{
+  position: absolute;
+  margin-left: 2rem;
+  
+
 }
