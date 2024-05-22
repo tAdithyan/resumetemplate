@@ -5,8 +5,10 @@ module.exports = {
     extend: {
       fontFamily: {
         sans: ['Inter var', ...defaultTheme.fontFamily.sans],
+        screens: { 'sm': { 'max': '360px' } },
       },
     },
+
   },
   // ...
 }
