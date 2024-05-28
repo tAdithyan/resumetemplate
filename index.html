@@ -5,17 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <style type="text/tailwindcss">
+      @layer utilities {
+        .center {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+      
+      }
+      @layer components {
+       
+        .subhead{
+          @apply text-base font-bold
+        }
+        
+        
+
+        .content {
+          @apply text-xs md:text-base;
+        }
+      
+        .contact{
+          @apply center md:gap-2 gap-1
+        }
+        .small{
+          @apply p-2 md:p-8
+
+        }
+        .certificate{
+          @apply md:my-4 my-1 font-normal md:text-xl text-sm;
+        }
+        .graytext{
+          @apply flex justify-between text-gray-600 text-xs md:text-sm
+
+        }
+      
+      
+      }
+    </style>
   </head>
   <body>
-    <div class=" bg-gray-300">
-      <div
-        class=" min-h-screen  grid grid-cols-1  "
-      >
-        <div class=" bg-white-300 md:m-8 2xl:px-96">
-          <header class="border-b-4 border-black p-4 md:p-8 bg-white">
-            <h1 class="text-xl  subpixel-antialiased   text-gray-800 font-semibold  md:text-4xl">Anna Taylor</h1>
+    <div class="bg-gray-300">
+      <div class="min-h-screen grid grid-cols-1">
+        <div class="bg-white-300 md:m-8 2xl:px-96">
+          <header class="border-b-4 border-black small bg-white">
+            <h1
+              class="text-xl subpixel-antialiased text-gray-800 font-semibold md:text-4xl"
+            >
+              Anna Taylor
+            </h1>
             <p class="font-light text-gray-800">Certified Medical Assistant</p>
-            <p class="text-xs md:text-base">
+            <p class="content">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta
               qui nesciunt at dolor suscipit perferendis possimus vitae
               inventore in eaque quasi totam dicta porro itaque, ipsum iure?
@@ -26,133 +69,103 @@
             </p>
           </header>
           <div
-            class=" border-b-4 border-black flex items-center justify-around md:justify-around lg:justify-center overflow-hidden 2xl:gap-8 md:p-3 bg-white text-xs md:text-base lg:gap-8"
+            class="border-b-4 border-black flex items-center justify-around  lg:justify-center overflow-hidden 2xl:gap-8 md:p-3 bg-white content lg:gap-8"
           >
-            <div class="flex gap-1 items-center justify-center md:gap-2">
+            <div class=" contact">
               <i class="fa-solid fa-envelope"></i>
               <p>xyz@gmail.com</p>
             </div>
-            <div class="flex items-center justify-center md:gap-2">
+            <div class="contact">
               <i class="fa-solid fa-phone"></i>
               <p>1234567890</p>
             </div>
-            <div class="flex items-center justify-center md:gap-2">
+            <div class="contact">
               <i class="fa-solid fa-location-dot"></i>
               <p>xyz,klm</p>
             </div>
-            <div class="flex items-center justify-center md:gap-2">
+            <div class="contact">
               <i class="fa-brands fa-linkedin"></i>
               <p>linkdin.com/xyz</p>
             </div>
           </div>
           <!-- workexperience -->
           <div class="grid grid-cols-7">
-            <div class="bg-white col-start-1 col-span-4 min-h-screen p-2 md:p-8">
+            <div
+              class="bg-white col-start-1 col-span-4 min-h-screen small"
+            >
               <h1
-                class="text-base subpixel-antialiased text-gray-800 font-semibold  md:text-2xl " 
+                class="text-base subpixel-antialiased text-gray-800 font-semibold md:text-2xl"
               >
                 WORK EXPERIENCE
               </h1>
 
-              <div class=" mt-2 md:mt-4">
-                <h1 class="font-extrabold text-sm md:text-xl">Medical Assistant</h1>
-                <h1 class="font-bold normal md:text-xl text-sm">
+              <div class="mt-2 md:mt-4">
+                <h1 class="subhead ">Medical Assistant</h1>
+                <h1 class=" normal md:text-xl text-sm">
                   First Choice Health Institute
                 </h1>
-                <div class="flex justify-between text-gray-600  text-xs md:text-sm">
+                <div
+                  class="graytext"
+                >
                   <p>08/2015</p>
                   <p>Hangaria/Tvm</p>
                 </div>
-                <!-- content -->
-                <div class="text-xs md:text-base">
+                <!-- text-xs -->
+                <div class="content">
                   <i class="fa-solid fa-minus"></i>
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                   Similique mollitia porro nesciunt ad omnis in autem amet
                   delectus est blanditiis, consectetur consequuntur quaerat
                   laborum voluptatem quae temporibus eligendi possimus
                   veritatis.
-                <div class="text-xs md:text-base">
-                  <i class="fa-solid fa-minus"></i>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Similique mollitia porro nesciunt ad omnis in autem amet
-                  delectus est blanditiis, consectetur consequuntur quaerat
-                  laborum voluptatem quae temporibus eligendi possimus
-                  veritatis.
-                </div>
-                <div class="text-xs md:text-base">
-                  <i class="fa-solid fa-minus"></i>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Similique mollitia porro nesciunt ad omnis in autem amet
-                  delectus est blanditiis, consectetur consequuntur quaerat
-                  laborum voluptatem quae temporibus eligendi possimus
-                  veritatis.
-                </div>
-                <div class="text-xs md:text-base">
-                  <i class="fa-solid fa-minus"></i>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Similique mollitia porro nesciunt ad omnis in autem amet
-                  delectus est blanditiis, consectetur consequuntur quaerat
-                  laborum voluptatem quae temporibus eligendi possimus
-                  veritatis.
-                </div>
-                <div class="">
-                  <i class="fa-solid fa-minus"></i>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Similique mollitia porro nesciunt ad omnis in autem amet
-                  delectus est blanditiis, consectetur consequuntur quaerat
-                  laborum voluptatem quae temporibus eligendi possimus
-                  veritatis.
-                </div>
-              </div>
-              </div>
-
-              <div>
-                <h1 class="font-extrabold text-sm md:text-xl">Medical Assistant</h1>
-                <h1 class="font-b=normal md:text-xl text-sm">
-                  First Choice Health Institute
-                </h1>
-                <div class="flex justify-between text-gray-600  text-xs md:text-sm">
-                  <p>08/2015</p>
-                  <p>Hangaria/Tvm</p>
-                </div>
-                <!-- content -->
-                <div class="text-xs md:text-base">
-                  <i class="fa-solid fa-minus"></i>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Similique mollitia porro nesciunt ad omnis in autem amet
-                  delectus est blanditiis, consectetur consequuntur quaerat
-                  laborum voluptatem quae temporibus eligendi possimus
-                  veritatis.
-                </div>
-                <div class="text-xs md:text-base">
-                  <i class="fa-solid fa-minus"></i>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Similique mollitia porro nesciunt ad omnis in autem amet
-                  delectus est blanditiis, consectetur consequuntur quaerat
-                  laborum voluptatem quae temporibus eligendi possimus
-                  veritatis.
-                </div>
-                <div class="text-xs md:text-base">
-                  <i class="fa-solid fa-minus"></i>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Similique mollitia porro nesciunt ad omnis in autem amet
-                  delectus est blanditiis, consectetur consequuntur quaerat
-                  laborum voluptatem quae temporibus eligendi possimus
-                  veritatis.
+                  <div class="content">
+                    <i class="fa-solid fa-minus"></i>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Similique mollitia porro nesciunt ad omnis in autem amet
+                    delectus est blanditiis, consectetur consequuntur quaerat
+                    laborum voluptatem quae temporibus eligendi possimus
+                    veritatis.
+                  </div>
+                  <div class="content">
+                    <i class="fa-solid fa-minus"></i>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Similique mollitia porro nesciunt ad omnis in autem amet
+                    delectus est blanditiis, consectetur consequuntur quaerat
+                    laborum voluptatem quae temporibus eligendi possimus
+                    veritatis.
+                  </div>
+                  <div class="content">
+                    <i class="fa-solid fa-minus"></i>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Similique mollitia porro nesciunt ad omnis in autem amet
+                    delectus est blanditiis, consectetur consequuntur quaerat
+                    laborum voluptatem quae temporibus eligendi possimus
+                    veritatis.
+                  </div>
+                  <div class="">
+                    <i class="fa-solid fa-minus"></i>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Similique mollitia porro nesciunt ad omnis in autem amet
+                    delectus est blanditiis, consectetur consequuntur quaerat
+                    laborum voluptatem quae temporibus eligendi possimus
+                    veritatis.
+                  </div>
                 </div>
               </div>
 
               <div>
-                <h1 class="font-extrabold text-sm md:text-xl">Medical Assistant</h1>
-                <h1 class="font-b=normal md:text-xl text-sm">
+                <h1 class="subhead">Medical Assistant</h1>
+                <h1 class="normal md:text-xl text-sm">
                   First Choice Health Institute
                 </h1>
-                <div class="flex justify-between text-gray-600  text-xs md:text-sm">
+                <div
+                  class="graytext"
+                >
                   <p>08/2015</p>
                   <p>Hangaria/Tvm</p>
                 </div>
-                <!-- content -->
-                <div class="text-xs md:text-base">
+                <!-- text-xs -->
+                <div class="content">
                   <i class="fa-solid fa-minus"></i>
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                   Similique mollitia porro nesciunt ad omnis in autem amet
@@ -160,7 +173,45 @@
                   laborum voluptatem quae temporibus eligendi possimus
                   veritatis.
                 </div>
-                <div class="text-xs md:text-base">
+                <div class="content">
+                  <i class="fa-solid fa-minus"></i>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Similique mollitia porro nesciunt ad omnis in autem amet
+                  delectus est blanditiis, consectetur consequuntur quaerat
+                  laborum voluptatem quae temporibus eligendi possimus
+                  veritatis.
+                </div>
+                <div class="content">
+                  <i class="fa-solid fa-minus"></i>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Similique mollitia porro nesciunt ad omnis in autem amet
+                  delectus est blanditiis, consectetur consequuntur quaerat
+                  laborum voluptatem quae temporibus eligendi possimus
+                  veritatis.
+                </div>
+              </div>
+
+              <div>
+                <h1 class="subhead">Medical Assistant</h1>
+                <h1 class="normal md:text-xl text-sm">
+                  First Choice Health Institute
+                </h1>
+                <div
+                  class="graytext"
+                >
+                  <p>08/2015</p>
+                  <p>Hangaria/Tvm</p>
+                </div>
+                <!-- text-xs -->
+                <div class="content">
+                  <i class="fa-solid fa-minus"></i>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Similique mollitia porro nesciunt ad omnis in autem amet
+                  delectus est blanditiis, consectetur consequuntur quaerat
+                  laborum voluptatem quae temporibus eligendi possimus
+                  veritatis.
+                </div>
+                <div class="content">
                   <i class="fa-solid fa-minus"></i>
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                   Similique mollitia porro nesciunt ad omnis in autem amet
@@ -171,97 +222,134 @@
               </div>
             </div>
             <div class="col-start-5 col-span-3 bg-white">
-              <div class=" grid md:grid-rows-3 min-h-screen md:p-8 p-2">
-                <div class="row-start-1 ">
+              <div class="grid md:grid-rows-3 min-h-screen small">
+                <div class="row-start-1">
+                  <div class="card rounded-none"></div>
                   <h1
-                  class="text-base subpixel-antialiased text-gray-800 font-semibold  md:text-2xl "
+                    class="text-base subpixel-antialiased text-gray-800 font-semibold md:text-2xl"
                   >
                     SKILLS
                   </h1>
                   <!-- skills -->
                   <div
-                    class="grid lg:grid-cols-2 grid-rows-5  text-black mt-4 text-xs md:text-base min-h-full "
+                    class="grid lg:grid-cols-2 grid-rows-5 text-black mt-4 content min-h-full"
                   >
                     <div class="">
                       <p>patient care</p>
                     </div>
-                    <div >
+                    <div>
                       <p>DataBase Management</p>
                     </div>
                     <div>
                       <p>Inventory Management</p>
                     </div>
-                    <div >
+                    <div>
                       <p>Adminastrstive Support</p>
                     </div>
-                    <div >
+                    <div>
                       <p>Medical BIlling</p>
                     </div>
-                  
-                   
                   </div>
                 </div>
-                <div class=" row-start3 row-span-2 mt-20">
+                <div class="row-start3 row-span-2 mt-20">
                   <h1
-                  class="text-base subpixel-antialiased text-gray-800 font-semibold  md:text-2xl "
-                >
-                  CERTIFICATES
-                </h1>
-                <div class="md:my-4 my-1">
-                  <h1 class="font-b=normal md:text-xl text-sm">Certified Philebotony  Technician</h1>
-                  <p class=" text-gray-600  text-xs md:text-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
-                </div>
-                <div class="md:my-4 my-1">
-                  <h1 class="font-b=normal md:text-xl text-sm">Certified Philebotony  Technician</h1>
-                  <p class=" text-gray-600  text-xs md:text-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
-                </div>
-               
-                <div class="md:my-4 my-1">
-                  <h1 class="font-b=normal md:text-xl text-sm">Certified Philebotony  Technician</h1>
-                  <p class=" text-gray-600  text-xs md:text-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
-                </div>
-                <div class="md:my-4 my-1">
-                  <h1 class="font-b=normal md:text-xl text-sm">Certified Philebotony  Technician</h1>
-                  <p class=" text-gray-600  text-xs md:text-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
-                </div>
-                <div class="md:my-4 my-1">
-                  <h1 class="font-b=normal md:text-xl text-sm">Certified Philebotony  Technician</h1>
-                  <p class=" text-gray-600  text-xs md:text-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
-                </div>
-
-
-
-                </div>
-                <div >
-                  <h1 class="text-base subpixel-antialiased text-gray-800 font-semibold    mt-8     md:text-2xl ">EDUCATION</h1>
-                  <p class="font-extrabold text-sm md:text-xl mt-2">Bachelor of Scince  in Health Care Management</p>
-                  <p class="font-b=normal md:text-xl text-sm">University of Houstern</p>
-                  <p class=" italic  text-gray-600  text-xs md:text-sm">2005-2008</p>
-                </div>
-                <div >
-                  <h2 class="text-base subpixel-antialiased text-gray-800 font-semibold  mt-8   md:text-2xl ">  LANGUAGES</h2>
-                  <!-- language -->
-                  <div class="grid lg:grid-cols-2 lg:grid-rows-2   bg-ye">
-                    <div class="md:m-2 ">
-                      <h1 class="font-extrabold  text-sm md:text-xl">English</h1>
-                      <p class=" text-gray-600  text-xs md:text-sm">Native or Bilinugual proficiency</p>
-                    </div>
-                    <div class="md:m-2 ">
-                      <h1 class="font-extrabold  text-sm md:text-xl">English</h1>
-                      <p class=" text-gray-600  text-xs md:text-sm">Native or Bilinugual proficiency</p>
-                    </div>
-                    <div class="md:m-2 ">
-                      <h1 class="font-extrabold  text-sm md:text-xl">English</h1>
-                      <p class=" text-gray-600  text-xs md:text-sm">Native or Bilinugual proficiency</p>
-                    </div>
-                    <div class="md:m-2 ">                   
-                      <h1 class="font-extrabold  text-sm md:text-xl">English</h1>
-                         <p class=" text-gray-600  text-xs md:text-sm">Native or Bilinugual proficiency</p>
-                        </div>
+                    class="text-base subpixel-antialiased text-gray-800 font-semibold md:text-2xl"
+                  >
+                    CERTIFICATES
+                  </h1>
+                  <div class="certificate">
+                    <h1 >
+                      Certified Philebotony Technician
+                    </h1>
+                    <p class="
+                    text-gray-600 text-xs md:text-sm">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
                   </div>
-                
+                  <div class="certificate">
+                    <h1 class="font-b=normal md:text-xl text-sm">
+                      Certified Philebotony Technician
+                    </h1>
+                    <p class="text-gray-600 text-xs md:text-sm">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                  </div>
+
+                  <div class="certificate">
+                    <h1 class="font-b=normal md:text-xl text-sm">
+                      Certified Philebotony Technician
+                    </h1>
+                    <p class="text-gray-600 text-xs md:text-sm">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                  </div>
+                  <div class="certificate">
+                    <h1 class="font-b=normal md:text-xl text-sm">
+                      Certified Philebotony Technician
+                    </h1>
+                    <p class="text-gray-600 text-xs md:text-sm">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                  </div>
+                  <div class="certificate">
+                    <h1 class="font-b=normal md:text-xl text-sm">
+                      Certified Philebotony Technician
+                    </h1>
+                    <p class="text-gray-600 text-xs md:text-sm">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                  </div>
                 </div>
-              
+                <div>
+                  <h1
+                    class="text-base subpixel-antialiased text-gray-800 font-semibold mt-8 md:text-2xl"
+                  >
+                    EDUCATION
+                  </h1>
+                  <p class="subhead md:text-xl mt-2">
+                    Bachelor of Scince in Health Care Management
+                  </p>
+                  <p class="font-b=normal md:text-xl text-sm">
+                    University of Houstern
+                  </p>
+                  <p class="italic text-gray-600 text-xs md:text-sm">
+                    2005-2008
+                  </p>
+                </div>
+                <div>
+                  <h2
+                    class="text-base subpixel-antialiased text-gray-800 font-semibold mt-8 md:text-2xl"
+                  >
+                    LANGUAGES
+                  </h2>
+                  <!-- language -->
+                  <div class="grid lg:grid-cols-2 lg:grid-rows-2 bg-ye">
+                    <div class="md:m-2">
+                      <h1 class="font-extrabold text-sm md:text-xl">English</h1>
+                      <p class="text-gray-600 text-xs md:text-sm">
+                        Native or Bilinugual proficiency
+                      </p>
+                    </div>
+                    <div class="md:m-2">
+                      <h1 class="font-extrabold text-sm md:text-xl">English</h1>
+                      <p class="text-gray-600 text-xs md:text-sm">
+                        Native or Bilinugual proficiency
+                      </p>
+                    </div>
+                    <div class="md:m-2">
+                      <h1 class="font-extrabold text-sm md:text-xl">English</h1>
+                      <p class="text-gray-600 text-xs md:text-sm">
+                        Native or Bilinugual proficiency
+                      </p>
+                    </div>
+                    <div class="md:m-2">
+                      <h1 class="font-extrabold text-sm md:text-xl">English</h1>
+                      <p class="text-gray-600 text-xs md:text-sm">
+                        Native or Bilinugual proficiency
+                      </p>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
